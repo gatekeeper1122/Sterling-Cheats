@@ -118,7 +118,7 @@ BOOL Requests::PacketDownloadPlugin(DWORD TitleID, DWORD* pAddress, DWORD* pSize
 						return PacketDownloadPluginBytes(TitleID, pAddress, pSize);
 
 					case Response::DOWNLOAD_PLUGIN_STATUS_ERROR:
-						error = "xbLive - Failed to download plugin!";
+						error = "Sterling - Failed to download plugin!";
 						break;
 					}
 				}

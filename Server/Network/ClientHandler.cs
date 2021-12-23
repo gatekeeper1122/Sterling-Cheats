@@ -125,7 +125,8 @@ namespace Server {
                     PacketConnect.Handle(dataReader, serverWriter, header, logId, IP);
                 } else {
                     switch (header.Command) {
-                        case Packets.PACKET_GET_PLUGINS: GetPlugins.Handle(dataReader, serverWriter, header, logId, IP);
+                        case Packets.PACKET_DOWNLOAD_PLUGIN:
+                            PacketDownloadPlugin.Handle(dataReader, serverWriter, header, logId, IP);
                             break;
                     }
                 }
